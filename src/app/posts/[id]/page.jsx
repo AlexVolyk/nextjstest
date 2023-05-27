@@ -59,11 +59,11 @@ export default PostsId
 
 
 
-export const getServerSideProps = (context) => {
-    console.log(context, 'contextcontextcontextcontextcontext')
-    return {
-        props: {
+// export const getServerSideProps = (context) => {
+//     console.log(context, 'contextcontextcontextcontextcontext')
+//     return {
+//         props: {
 
-        }
-    }
-}
+//         }
+//     }
+// }
