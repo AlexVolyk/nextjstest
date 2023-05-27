@@ -5,7 +5,10 @@ import React, { useState } from 'react'
 const Counter = () => {
     const [count, setCount] = useState(0)
 
-    console.log(localStorage.getItem('token'), 'token---- localStorage')
+
+    if (typeof window !== "undefined") {
+        console.log(localStorage.getItem('token'), 'token---- localStorage')
+    }
 
     const displayCount = () => console.log(count)
 
@@ -16,7 +19,7 @@ const Counter = () => {
     const decrease = () => {
         setCount(prev => prev - 1)
         displayCount()
-    }   
+    }
 
     return (
         <>
