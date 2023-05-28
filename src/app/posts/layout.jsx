@@ -41,7 +41,7 @@ export default async function RootLayout(props) {
     //   </body>
     // </html>
     <>
-        <p>LAYOUT</p>
+        {/* <p>LAYOUT</p> */}
         {props.children}
     </>
   )

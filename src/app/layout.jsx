@@ -1,3 +1,6 @@
+// 'use client'
+
+import MyChakraProvide from "@/components/MyChakraProvide"
 import NavBar from "@/components/NavBar"
 import { cookies } from "next/dist/client/components/headers"
 
@@ -21,7 +24,7 @@ export const getData = async () => {
 
 
 export default async function RootLayout(props) {
-  // console.log(props, 'props RootLayout')
+  console.log(props, 'props RootLayout')
 
 
   // let data = await getData()
@@ -31,8 +34,10 @@ export default async function RootLayout(props) {
   return (
     <html lang="en">
       <body>
-        <NavBar />
-        {props.children}
+        <MyChakraProvide>
+          <NavBar />
+          {props.children}
+        </MyChakraProvide>
       </body>
     </html>
   )

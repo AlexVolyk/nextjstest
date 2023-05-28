@@ -4,11 +4,11 @@ import { Analytics } from '@vercel/analytics/react'
 export default function Home() {
   return (
     <main>
-      <p>
+      {/* <p>
         Home page
-      </p>
+      </p> */}
       <Counter />
-      <Analytics />
+      {/* <Analytics /> */}
     </main>
   )
 }

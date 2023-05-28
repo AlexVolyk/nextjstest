@@ -1,5 +1,6 @@
 'use client'
 
+import { Button, ButtonGroup, Container, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 
 const Counter = () => {
@@ -23,22 +24,63 @@ const Counter = () => {
 
     return (
         <>
-            <div>Counter</div>
-            <div>
-                <p>
-                    {count}
-                </p>
-                <button
-                    onClick={decrease}
+
+            <Container
+                centerContent
+            >
+                {/* <Button
+                    onClick={() => console.log(count, 'count')}
                 >
-                    -
-                </button>
-                <button
-                    onClick={increase}
+                    show me the will
+                </Button> */}
+                <Text
+                    marginTop={'30px'}
+                    fontSize={'2xl'}
+                    textAlign='center'
                 >
-                    +
-                </button>
-            </div>
+                    Counter
+                </Text>
+
+                <Container
+                    alignItems="center"
+                    display={'flex'}
+                    maxW={'200px'}
+                    height={'40px'}
+                    // justifyContent={'space-between'}
+                    margin={0}
+                    marginTop={'30vh'}
+                    re
+
+                >
+                    <Button
+                        onClick={decrease}
+                    >
+                        -
+                    </Button>
+                    <Container
+                        height={'100%'}
+                        width={'100%'}
+                    // position={'relative'}
+                    >
+                        <Text
+                            textAlign={'center'}
+                            // position={'absolute'}
+                            // bottom={'20%'}
+                            // top={'50%'}
+                            width={'100%'}
+                            // left={'calc(50%)'}
+                            fontSize={'2xl'}
+                        >
+                            {count}
+                        </Text>
+                    </Container>
+                    <Button
+                        onClick={increase}
+                    >
+                        +
+                    </Button>
+                </Container>
+            </Container>
         </>
     )
 }
