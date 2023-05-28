@@ -5,11 +5,11 @@ import Link from "next/link"
 // import { useEffect } from "react"
 
 
-export const metadata = {
-    title: 'Posts',
-    description: 'Posts Page'
+// export const metadata = {
+//     title: 'Posts',
+//     description: 'Posts Page'
 
-}
+// }
 
 
 export const getData = async () => {
